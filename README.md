@@ -21,10 +21,6 @@ I chose a lightweight but strict **Clean Architecture** approach (Domain, Data, 
 
 No 3rd-party UI kits were used. Every card, layout, and component was built from standard Flutter widgets.
 
-## Note to Reviewer
-
-Thank you for your time reviewing this project. I focused heavily on architecture, code reusability, and ensuring the widget tree remained clean and performant (utilizing Slivers). I also wanted to ensure the offline state wasn't just a generic error screen, but a seamless fallback to cached data with a helpful banner.
-
 ### A quick note on the "Check-In Done" state
 You might notice I left out the final "Done for this week" check-in state shown in the designs. Since the assignment brief didn't specify exactly what triggers a completed check-in, I stuck to the "First Time" and "Returning" states for now to keep things focused. 
 
