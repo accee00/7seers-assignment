@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _resetState() {
-    _prefs.remove('isFirstTime');
+    _prefs.setBool('isFirstTime', false);
     setState(() {
       _isFirstTime = true;
     });
