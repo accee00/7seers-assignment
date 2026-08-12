@@ -7,7 +7,7 @@ This repository contains the implementation of the home screen built specificall
 - **Dynamic Greeting & Check-In**: The top of the screen changes its messaging based on both user state (first time vs returning) and the actual time of day (e.g. "Morning, Harsh" vs "Evening, Harsh" vs "Welcome").
 - **Firestore-Driven Guides**: The "This Week's Guide" section fetches data in real-time from a Cloud Firestore database.
 - **Offline Resilience**: The app detects when the user loses connection, displays a sleek `OfflineWrapper` banner, and seamlessly falls back to the last cached data using `shared_preferences`.
-- **Custom Scroll Behaviors**: Implemented a `CustomScrollView` with a `SliverAppBar` so the app bar dynamically scrolls away as the user browses their guides.
+- **Custom Scroll Behaviors**: Implemented a `CustomScrollView` with a `SliverAppBar` so the app bar dynamically scrolls away as the user browses.
 
 ## Architecture & Tech Stack
 
