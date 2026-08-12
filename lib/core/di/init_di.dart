@@ -16,13 +16,13 @@ Future<void> initDi() async {
       await SharedPreferences.getInstance();
   sl.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
   sl.registerLazySingleton<ConnectivityService>(() => ConnectivityService());
-
+  sl.registerLazySingleton<FirebaseFirestore>(() => FirebaseFirestore.instance);
   _initHome();
 }
 
 void _initHome() {
   sl.registerLazySingleton<HomeRemoteDataSource>(
-    () => HomeRemoteDataSourceImpl(firestore: FirebaseFirestore.instance),
+    () => HomeRemoteDataSourceImpl(firestore: sl<FirebaseFirestore>()),
   );
   sl.registerLazySingleton<HomeLocalDataSource>(
     () => HomeLocalDataSourceImpl(preferences: sl<SharedPreferences>()),
